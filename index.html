@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Your Budget Movers - Moving & Storage Services</title>
+        <link rel="shortcut icon" href="logos/Logo (Orange).png" type="image/png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Crimson Text:300,400,500,600' rel='stylesheet'>
+        <link href = "styles/main.css" rel = "stylesheet" />
+    </head>
+    <header>
+        <div class = "container-fluid">
+        <div class = "row">
+            <div class ="first">
+                <a href="tel:919-504-2203">919-504-2203</a>
+            </div>
+            <div class = "second center">
+                Making Moving Simple
+            </div>
+            <div class = "third headersocial">
+                <a target="_blank" href="https://www.facebook.com/YourBudgetMovers/" rel="http://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+			    <a target="_blank" href="https://twitter.com/YourBudgetMover" rel="http://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+			    <a target="_blank" href="https://www.instagram.com/yourbudgetmover/" rel="http://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        </div>
+    </header>
+    <body>
+        <div class = "expanded nav-wrapper-main">
+        <nav class = "navbar navbar-expand-md navbar-light bg-white size">
+            <div class ="container-fluid sizediv">
+                <a class= "navbar-brand mainlogo" href = "index.html"><img id="Logo2" src= "logos/Logo (Orange).png" width = "212" height ="135"></a>
+                <button class = "navbar-toggler" type = "button" data-toggle= "collapse"
+                data-target= "#navbarResponsive">
+                    <span class= "navbar-toggler-icon"></span>
+                </button>
+                <div class = "collapse navbar-collapse" id ="navbarResponsive">
+                    <ul class= "navbar-nav ml-auto">
+                        <li class = "nav-item">
+                            <a class = "nav-link nav-active" href="index.html">HOME</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a class = "nav-link" href="quote.html">GET A QUOTE</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a class = "nav-link" href="services.html">SERVICES</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a class = "nav-link" href="reviews.html">REVIEWS</a>
+                        </li>
+                        <li class = "d-lg-none d-xl-block nav-item">
+                            <a class = "nav-link" href="aboutus.html">ABOUT US</a>
+                        </li>
+                        <!--Dropdown-->
+                        <li class = "nav-item dropdown">
+                            <a class = "nav-link dropdown-toggle" href="#" id = "navbardrop" 
+                            data-toggle = "dropdown">MORE</a>
+                            <div class = "dropdown-menu dropdown-menu-right dropdownstyle">
+                                <a class = "d-none d-lg-block d-xl-none dropdown-item" href = "aboutus.html">ABOUT US</a>
+                                <a class = "dropdown-item" href ="jointeam.html">JOIN OUR TEAM</a>
+                                <a class = "dropdown-item" href ="incident.html">INCIDENT REPORT</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </div>
+        <div class = "nav-wrapper-compressed-main">
+            <div id = "compressedheader">
+                <div id = "myNav" class = "overlay">
+                    <a href = "javascript:void(0)" class = "closebtn" onclick = "closeNav()">&times;</a>
+                    <div class = "overlay-content">
+                        <a href = "index.html">Home</a>
+                        <a href = "quote.html"> Get a Quote</a>
+                        <a href = "services.html">Services</a>
+                        <a href = "reviews.html">Reviews</a>
+                        <a href = "aboutus.html">About Us</a>
+                        <a href = "jointeam.html">Join Our Team</a>
+                        <a href = "incident.html">Incident Report</a>
+                    </div>
+                </div>
+                <a id = "toggleheader" class = "alignleft opennavmain" onclick = "openNav()">&#9776;</a>
+                <a class = "aligncenter highz mainlogo logopadding" href = "index.html"><img id = "Logocompmain" src= "logos/Logo (Orange).png" width = "119.25" height ="75.9375"></a>
+                <a class = "alignright"></a>
+            </div>
+        </div>
+    
+    <!--Carousel and YBM Info-->
+    <div class="container-fluid">
+        <div class="row padding flex-lg-row-reverse">
+            <div class="slidingpics col-lg-6">
+                <div id="slides" class = "carousel slide" data-ride="carousel">
+                        <ul class="carousel-indicators">
+                            <li data-target="#slides" data-slide-to="0" class="active"></li>
+                            <li data-target="#slides" data-slide-to="1"></li>
+                        </ul>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src ="photos/img1.jpg" >
+                        </div>
+                        <div class="carousel-item">
+                            <img src ="photos/img2.jpg">
+                        </div>
+                     </div>
+                </div>
+            </div>
+            <div class="down col-lg-6">
+                <h1 class = "moving">Moving & Storage Services</h1>
+                <p class = "moving">One of the Triangle's top rated Moving Companies.
+                </p>
+                <br>
+                <a href ="local.html" class="btn btn-primary">Local Moving</a>
+                <a href ="labor.html" class="btn btn-primary">Labor Only</a>
+                <a href ="long.html" class="btn btn-primary">Long-Distance Moving</a>
+                <a href ="storage.html" class="btn btn-primary">Storage</a>
+                <a href ="waste.html" class="btn btn-primary">Waste Disposal</a>
+                <p class = "moving bold">(919) 504-2203</p>
+                <p class = "moving bold">info@yourbudgetmover.com</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="container-fluid nopadding crimson">
+        <div class="center jumbotron">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <h2>COVID-19 UPDATE</h2>
+            
+            <p class = "center contain">
+                Your Budget Movers will remain operational during these difficult
+                 times. All of our movers have been trained through proper health
+                 safety precautions. We ask our customers to follow these same precautions
+                  in order to ensure their own safety and our mover's safety. 
+            </p>
+        </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <a href="quote.html"><button type="button" class="btn btn-lg">
+                    GET AN ONLINE QUOTE
+                </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+
+  
+<div class="container-fluid">
+    <h1 class = "pagetitle">Our Mission</h1>
+    <div class="missionparent row padding">
+        <div class = "right col-md-4 col-lg-4 col-xl-4">
+            <img src= "photos/abdullatruck.jpg" width = "85%"></a>
+        </div>
+        <div class = "col-md-8 col-lg-8 col-xl-8">
+            <p class = "mission">    Here at Your Budget Movers we strive to relieve the stress of moving
+                    off your back and shoulders in order to make it as stress free as 
+                    possible. We do this by keeping our prices reasonable while providing
+                    reliable moving work. We offer moving & storage service and waste disposal. 
+                    Customer satisfaction is our promise and with our work, your back will thank you.
+                    We know how stressful moving can be, so let Your Budget Movers take care of it. 
+            </p>
+        </div>
+        </div>
+        </div>
+<!--- Connect -->
+<div class="container-fluid padding">
+	<div class="row text-center padding">
+		<div class="col-12">
+			<h1>Social Media</h1>
+		</div>
+		<div class="col-12 social padding">
+			<a target="_blank" href="https://www.facebook.com/YourBudgetMovers/" rel="http://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+			<a target="_blank" href="https://twitter.com/YourBudgetMover" rel="http://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+			<a target="_blank" href="https://www.instagram.com/yourbudgetmover/" rel="http://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+		</div>
+	</div>
+</div>
+
+<script src="myscripts.js"></script>
+
+</body>
+
+    <!--- Footer -->
+<footer>
+	<div class="container-fluid padding">
+		<div class="crimson row text-center">
+			<div class="col-md-12">
+                <ul>
+                <li><a href="quote.html">GET A QUOTE</a></li>
+				<li><a href="services.html">SERVICES</a></li>
+				<li><a href="reviews.html">REVIEWS</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href ="jointeam.html">JOIN OUR TEAM</a></li>
+                <li><a href="incident.html">INCIDENT REPORT</a></li>
+                </ul>
+			</div>
+			<div class=" nopadding col-md-12">
+                <p class= "smaller"><b>Your Budget Movers</b></p>
+                <p class = "smaller">1145 E Executive Circle Cary, NC</p>
+                <p class = "smaller"><a class = "footerphone" href="tel:919-504-2203">919-504-2203</a></p>
+			</div>
+			<div class="col-12">
+				<p class = "smaller grey">Copyright &copy; 2020 Your Budget Movers- All Rights Reserved</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+</html>

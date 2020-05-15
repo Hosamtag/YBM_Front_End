@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Get a Free Quote - Your Budget Movers</title>
+        <link rel="shortcut icon" href="logos/Logo (Orange).png" type="image/png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Crimson Text:300,400,500,600' rel='stylesheet'>
+        <link href = "styles/main.css" rel = "stylesheet" />
+
+    </head>
+    <header>
+      <div class = "container-fluid">
+        <div class = "row">
+            <div class ="first">
+                <a href="tel:919-504-2203">919-504-2203</a>
+            </div>
+            <div class = "second center">
+                Making Moving Simple
+            </div>
+            <div class = "third headersocial">
+                <a target="_blank" href="https://www.facebook.com/YourBudgetMovers/" rel="http://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+			    <a target="_blank" href="https://twitter.com/YourBudgetMover" rel="http://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+			    <a target="_blank" href="https://www.instagram.com/yourbudgetmover/" rel="http://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        </div>
+    </header>
+    <body>
+        <div class = "expanded nav-wrapper">
+        <nav class = "navbar navbar-expand navbar-light bg-white borderbottom">
+            <div class ="container-fluid">
+                <a class= "navbar-brand" href = "index.html"><img id="Logo" src= "logos/Logo (Orange).png" width = "159" height ="101.25"></a>
+                <div class = "collapse navbar-collapse">
+                    <ul class= "navbar-nav ml-auto">
+                        <li class = "nav-item-active">
+                            <a class = "nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a class = "nav-link nav-active" href="quote.html">GET A QUOTE</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a class = "nav-link" href="services.html">SERVICES</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a class = "nav-link" href="reviews.html">REVIEWS</a>
+                        </li>
+                        <li class = "d-lg-none d-xl-block nav-item">
+                            <a class = "nav-link" href="aboutus.html">ABOUT US</a>
+                        </li>
+                        <!--Dropdown-->
+                        <li class = "nav-item dropdown">
+                            <a class = "nav-link dropdown-toggle" href="#" id = "navbardrop" 
+                            data-toggle = "dropdown">MORE</a>
+                            <div class = "dropdown-menu dropdown-menu-right dropdownstyle">
+                                <a class = "d-none d-lg-block d-xl-none dropdown-item" href = "aboutus.html">ABOUT US</a>
+                                <a class = "dropdown-item" href ="jointeam.html">JOIN OUR TEAM</a>
+                                <a class = "dropdown-item" href ="incident.html">INCIDENT REPORT</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </div>
+        <div class = "nav-wrapper-compressed">
+            <div id = "compressedheader" class = "borderbottom">
+                <div id = "myNav" class = "overlay">
+                    <a href = "javascript:void(0)" class = "closebtn" onclick = "closeNav()">&times;</a>
+                    <div class = "overlay-content">
+                        <a href = "index.html">Home</a>
+                        <a href = "quote.html"> Get a Quote</a>
+                        <a href = "services.html">Services</a>
+                        <a href = "reviews.html">Reviews</a>
+                        <a href = "aboutus.html">About Us</a>
+                        <a href = "jointeam.html">Join Our Team</a>
+                        <a href = "incident.html">Incident Report</a>
+                    </div>
+                </div>
+                <a class = "alignleft opennav" onclick = "openNav()">&#9776;</a>
+                <a class = "aligncenter logopadding" href = "index.html"><img id = "Logocomp" src= "logos/Logo (Orange).png" width = "119.25" height ="75.9375"></a>
+                <a class = "alignright"></a>
+            </div>
+        </div>
+    
+        
+        <div class="container-fluid">
+            <h1 class = "pagetitle">Get A Quote</h1>
+            <div class="row padding">
+                <div id = "try" class="col-lg-6">
+                    <button type = "button" class = "btn btn-primary" onclick = "next('try','nextlocal')"> Local Moving</button>
+                    <br>
+                    <button type = "button" class = "btn btn-primary" onclick = "next('try','nextlabor')"> Labor Only</button>
+                    <br>
+                    <button type = "button" class = "btn btn-primary" onclick = "next('try','nextdistance')"> Long-Distance Moving</button>
+                    <br>
+                    <button type = "button" class = "btn btn-primary" onclick = "next('try','nextstorage')"> Storage</button>
+                    <br>
+                    <button type = "button" class = "btn btn-primary" onclick = "next('try','nextwaste')"> Waste Disposal</button>
+                </div>
+                <div id = "nextlocal" class = "col-lg-6 center hidden">
+                    <button type= "button" class = "btn previous" onclick = "back('nextlocal','try')">&#8249; View all services</button>
+                    <h2>Local Moves: </h2>
+                    <button type = "button" class = "btn btn-primary" onclick = "next('nextlocal','localonline')">Online Quote</button>
+                    <button type = "button" class = "btn btn-primary" onclick = "next('nextlocal', 'localinperson')">In-Person Quote</button>
+                </div>
+
+                <div id = "localonline" class = "col-lg-6 center hidden">
+                    <button type= "button" class = "btn previous" onclick = "back('localonline','nextlocal')">&#8249; View all services</button>
+                    <h4 style ="text-align: center;">Fill Out Now for a Free Online Quote for a Local Move</h4>
+                    <form>
+                        <div class="float-container">
+                            <label for="local1">How did you hear about us?*</label>
+                            <input type="text" id="local1" data-placeholder="">
+                          </div>
+                          
+                          <div class="float-container">
+                            <label for="local2">First and Last Name*</label>
+                            <input type="text" id="local2" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="local3">Phone Number*</label>
+                            <input type="text" id="local3" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="local4">Email*</label>
+                            <input type="text" id="local4" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="local5">Current Address*</label>
+                            <input type="text" id="local5" data-placeholder="">
+                          </div>
+                          <div class="form-group">
+                            <!--<label for=seeAnotherField>Type of Home*</label>-->
+                            <select class="form-control" id="seeAnotherField" name="sellist1">
+                              <option value= "no">Type of Home*</option>
+                              <option value = "yes">Apartment</option>
+                              <option value = "no">Town House</option>
+                              <option value = "no">House</option>
+                              <option value = "yes">College Dorm</option>
+                              <option value = "no">Storage Unit</option>
+                            </select>
+                          </div>
+                          <div class="float-container" id="otherFieldDiv">
+                            <label for="otherField">Which floor?*</label>
+                            <input type="text" id="otherField" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="local7">Address of Your New Home*</label>
+                            <input type="text" id="local7" data-placeholder="">
+                          </div>
+                          <div class="form-group">
+                            <!--<label for=seeAnotherField2>Type of Home*</label>-->
+                            <select class="form-control" id="seeAnotherField2" name="sellist2">
+                              <option value= "no">Type of Home*</option>
+                              <option value = "yes">Apartment</option>
+                              <option value = "no">Town House</option>
+                              <option value = "no">House</option>
+                              <option value = "yes">College Dorm</option>
+                              <option value = "no">Storage Unit</option>
+                            </select>
+                          </div>
+                          <div class="float-container" id="otherFieldDiv2">
+                            <label for="otherField2">Which floor?*</label>
+                            <input type="text" id="otherField2" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="local8">Date of Your Move*</label>
+                            <input name="date" type="text" onfocus="(this.type='date')" onfocusout="(this.type='text')" id="local8" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="local9">Preferred Start Time*</label>
+                            <input type="text" id="local9" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="local10">How many movers would you like?*</label>
+                            <input type="text" id="local10" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="local11">Will You Need Us to Provide a Moving Truck?*</label>
+                            <input type="text" id="local11" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="local12">Will Our Movers Need to Assemble/ Disassemble Anything?*</label>
+                            <input type="text" id="local12" data-placeholder="">
+                          </div>
+                          <div class="nofloat">
+                            <label for="localnofloat">Details or Concerns (Please use this space to also list inventory of items being moved)*</label>
+                            <input type="text" id="localnofloat" data-placeholder="">
+                          </div>
+                          <div>
+                              <input type = "submit" class="submitquote" value="GET QUOTE">
+                          </div>
+                          
+                    </form>
+
+                </div>
+                <div id = "localinperson" class = "col-lg-6 center hidden">
+                  <button type= "button" class = "btn previous" onclick = "back('localinperson','nextlocal')">&#8249; View all services</button>
+                  <h4 style ="text-align: center;">Fill Out Now for a Free Online Quote for a Local Move</h4>
+                  <button type = "button" class = "btn" onclick = "next('localinperson','localconfirm')">time</button>
+                </div>
+
+                <div id = "localconfirm" class = "col-lg-6 center hidden">
+                  <button type= "button" class = "btn previous" onclick = "back('localconfirm','try')">&#8249; View all services</button>
+                  <div class = "left">
+                    <p>Get A FREE In-Person Quote</p>
+                    <p class = "smaller inline grey">Time and Date from prev</p>
+                    <button type= "button" class = "modify" onclick = "back('localconfirm','localinperson')">Modify</button>
+                    <p class = "smaller">1 hr | Free</p>
+                  </div>
+                  <hr>
+                  <p class = "left">Your Information</p>
+                  
+                  
+                  <form>
+                    <div class="float-container">
+                        <label for="localconfirm1">First Name*</label>
+                        <input type="text" id="localconfirm1" data-placeholder="">
+                      </div>
+                      
+                      <div class="float-container">
+                        <label for="localconfirm2">Last Name*</label>
+                        <input type="text" id="localconfirm2" data-placeholder="">
+                      </div>
+                      <div class="float-container">
+                        <label for="localconfirm3">Email Address*</label>
+                        <input type="text" id="localconfirm3" data-placeholder="">
+                      </div>
+                      <div class="float-container">
+                        <label for="localconfirm4">Phone Number (Optional)</label>
+                        <input type="text" id="localconfirm4" data-placeholder="">
+                      </div>
+                      <p class = "smaller grey">Service will be provided at your location</p>
+                      <div class="float-container">
+                        <label for="localconfirm5">Address 1*</label>
+                        <input type="text" id="localconfirm5" data-placeholder="">
+                      </div>
+                      <div class="float-container">
+                        <label for="localconfirm7">City*</label>
+                        <input type="text" id="localconfirm7" data-placeholder="">
+                      </div>
+                      <div class="float-container">
+                        <label for="localconfirm8">Zip*</label>
+                        <input type="text" id="localconfirm8" data-placeholder="">
+                      </div>
+                      <div class="float-container">
+                        <label for="localconfirm6">Address 2 (Optional)</label>
+                        <input type="text" id="localconfirm6" data-placeholder="">
+                      </div>
+                      <div>
+                        <input type = "submit" class="submitquote" value="CONFIRM BOOKING">
+                      </div>
+                      
+                </form>
+
+                </div>
+            
+
+                <div id = "nextlabor" class = "col-lg-6 center hidden">
+                    <button type= "button" class = "btn previous" onclick = "back('nextlabor','try')">&#8249; View all services</button>
+                    <h4 style ="text-align: center;">Fill Out Now for a Free Online Labor Quote</h4>
+                    <form>
+                        <div class="float-container">
+                            <label for="labor1">How did you hear about us?*</label>
+                            <input type="text" id="labor1" data-placeholder="">
+                          </div>
+                          
+                          <div class="float-container">
+                            <label for="labor2">First and Last Name*</label>
+                            <input type="text" id="labor2" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="labor3">Phone Number*</label>
+                            <input type="text" id="labor3" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="labor4">Email*</label>
+                            <input type="text" id="labor4" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="labor5">Current Address*</label>
+                            <input type="text" id="labor5" data-placeholder="">
+                          </div>
+                          <div class="form-group">
+                            <!--<label for=seeAnotherField>Type of Home*</label>-->
+                            <select class="form-control" id="seeAnotherField3" name="sellist3">
+                              <option value= "no">Type of Home*</option>
+                              <option value = "yes">Apartment</option>
+                              <option value = "no">Town House</option>
+                              <option value = "no">House</option>
+                              <option value = "yes">College Dorm</option>
+                              <option value = "no">Storage Unit</option>
+                            </select>
+                          </div>
+                          <div class="float-container" id="otherFieldDiv3">
+                            <label for="otherField3">Which floor?*</label>
+                            <input type="text" id="otherField3" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="labor7">Address of Your New Home*</label>
+                            <input type="text" id="labor7" data-placeholder="">
+                          </div>
+                          <div class="form-group">
+                            <!--<label for=seeAnotherField2>Type of Home*</label>-->
+                            <select class="form-control" id="seeAnotherField4" name="sellist4">
+                              <option value= "no">Type of Home*</option>
+                              <option value = "yes">Apartment</option>
+                              <option value = "no">Town House</option>
+                              <option value = "no">House</option>
+                              <option value = "yes">College Dorm</option>
+                              <option value = "no">Storage Unit</option>
+                            </select>
+                          </div>
+                          <div class="float-container" id="otherFieldDiv4">
+                            <label for="otherField4">Which floor?*</label>
+                            <input type="text" id="otherField4" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="labor8">Date of Your Move*</label>
+                            <input name="date" type="text" onfocus="(this.type='date')" onfocusout="(this.type='text')" id="labor8" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="labor9">Preferred Start Time*</label>
+                            <input type="text" id="labor9" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="labor10">How many movers would you like?*</label>
+                            <input type="text" id="labor10" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="labor11">Will You Need Us to Provide a Moving Truck?*</label>
+                            <input type="text" id="labor11" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="labor12">Will Our Movers Need to Assemble/ Disassemble Anything?*</label>
+                            <input type="text" id="labor12" data-placeholder="">
+                          </div>
+                          <div class="nofloat">
+                            <label for="labornofloat">Details or Concerns (Please use this space to also list inventory of items being moved)*</label>
+                            <input type="text" id="labornofloat" data-placeholder="">
+                          </div>
+                          <div>
+                              <input type = "submit" class="submitquote" value="GET QUOTE">
+                          </div>
+                          
+                    </form>
+                </div>
+                <div id="nextdistance" class = "col-lg-6 center hidden">
+                    <button type= "button" class = "btn previous" onclick = "back('nextdistance','try')">&#8249; View all services</button>
+                    <h2>Long-Distance Moves: </h2>
+                    <button type = "button" class = "btn btn-primary" onclick = "next('nextdistance','distanceonline')">Online Quote</button>
+                    <button type = "button" class = "btn btn-primary" onclick = "next('nextdistance','distanceinperson')">In-Person Quote</button>
+                </div>
+                <div id ="distanceonline" class = "col-lg-6 center hidden">
+                    <button type= "button" class = "btn previous" onclick = "back('distanceonline','nextdistance')">&#8249; View all services</button>
+                    <h4 style ="text-align: center;">Fill Out Now for a Free Online Quote for a Distance Move</h4>
+                    <form>
+                        <div class="float-container">
+                            <label for="dist1">How did you hear about us?*</label>
+                            <input type="text" id="dist1" data-placeholder="">
+                          </div>
+                          
+                          <div class="float-container">
+                            <label for="dist2">First and Last Name*</label>
+                            <input type="text" id="dist2" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="dist3">Phone Number*</label>
+                            <input type="text" id="dist3" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="dist4">Email*</label>
+                            <input type="text" id="dist4" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="dist5">Current Address*</label>
+                            <input type="text" id="dist5" data-placeholder="">
+                          </div>
+                          <div class="form-group">
+                            <!--<label for=seeAnotherField>Type of Home*</label>-->
+                            <select class="form-control" id="seeAnotherField5" name="sellist5">
+                              <option value= "no">Type of Home*</option>
+                              <option value = "yes">Apartment</option>
+                              <option value = "no">Town House</option>
+                              <option value = "no">House</option>
+                              <option value = "yes">College Dorm</option>
+                              <option value = "no">Storage Unit</option>
+                            </select>
+                          </div>
+                          <div class="float-container" id="otherFieldDiv5">
+                            <label for="otherField5">Which floor?*</label>
+                            <input type="text" id="otherField5" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="dist7">Address of Your New Home*</label>
+                            <input type="text" id="dist7" data-placeholder="">
+                          </div>
+                          <div class="form-group">
+                            <!--<label for=seeAnotherField2>Type of Home*</label>-->
+                            <select class="form-control" id="seeAnotherField6" name="sellist6">
+                              <option value= "no">Type of Home*</option>
+                              <option value = "yes">Apartment</option>
+                              <option value = "no">Town House</option>
+                              <option value = "no">House</option>
+                              <option value = "yes">College Dorm</option>
+                              <option value = "no">Storage Unit</option>
+                            </select>
+                          </div>
+                          <div class="float-container" id="otherFieldDiv6">
+                            <label for="otherField6">Which floor?*</label>
+                            <input type="text" id="otherField6" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="dist8">Date of Your Move*</label>
+                            <input name="date" type="text" onfocus="(this.type='date')" onfocusout="(this.type='text')" id="dist8" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="dist9">Preferred Start Time*</label>
+                            <input type="text" id="dist9" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="dist10">How many movers would you like?*</label>
+                            <input type="text" id="dist10" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="dist11">Will You Need Us to Provide a Moving Truck?*</label>
+                            <input type="text" id="dist11" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="dist12">Will Our Movers Need to Assemble/ Disassemble Anything?*</label>
+                            <input type="text" id="dist12" data-placeholder="">
+                          </div>
+                          <div class="nofloat">
+                            <label for="distnofloat">Details or Concerns (Please use this space to also list inventory of items being moved)*</label>
+                            <input type="text" id="distnofloat" data-placeholder="">
+                          </div>
+                          <div>
+                              <input type = "submit" class="submitquote" value="GET QUOTE">
+                          </div>
+                          
+                    </form>
+                </div>
+
+                <div id ="distanceinperson" class = "col-lg-6 center hidden">
+                  <button type= "button" class = "btn previous" onclick = "back('distanceinperson','nextdistance')">&#8249; View all services</button>
+                  <h4 style ="text-align: center;">Fill Out Now for a Free Online Quote for a Distance Move</h4>
+                </div>
+
+                <div id = "nextstorage" class = "col-lg-6 center hidden">
+                    <button type= "button" class = "btn previous" onclick = "back('nextstorage','try')">&#8249; View all services</button>
+                    <h2>Storage Moves: </h2>
+                    <button type = "button" class = "btn btn-primary" onclick = "next('nextstorage','storageonline')">Online Quote</button>
+                    <button type = "button" class = "btn btn-primary" onclick = "next('nextstorage', 'storageinperson')">In-Person Quote</button>
+                </div>
+                <div id="storageonline" class = "col-lg-6 center hidden">
+                    <button type= "button" class = "btn previous" onclick = "back('storageonline','nextstorage')">&#8249; View all services</button>
+                    <h4 style ="text-align: center;">Fill Out Now for a Free Online Quote</h4>
+                    <form>
+                        <div class="float-container">
+                            <label for="storage1">How did you hear about us?*</label>
+                            <input type="text" id="storage1" data-placeholder="">
+                          </div>
+                          
+                          <div class="float-container">
+                            <label for="storage2">First and Last Name*</label>
+                            <input type="text" id="storage2" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="storage3">Phone Number*</label>
+                            <input type="text" id="storage3" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="storage4">Email*</label>
+                            <input type="text" id="storage4" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="storage5">Current Address*</label>
+                            <input type="text" id="storage5" data-placeholder="">
+                          </div>
+                          <div class="form-group">
+                            <!--<label for=seeAnotherField>Type of Home*</label>-->
+                            <select class="form-control" id="seeAnotherField7" name="sellist7">
+                              <option value= "no">Type of Home*</option>
+                              <option value = "yes">Apartment</option>
+                              <option value = "no">Town House</option>
+                              <option value = "no">House</option>
+                              <option value = "yes">College Dorm</option>
+                              <option value = "no">Storage Unit</option>
+                            </select>
+                          </div>
+                          <div class="float-container" id="otherFieldDiv7">
+                            <label for="otherField7">Which floor?*</label>
+                            <input type="text" id="otherField7" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="storage7">Address of Your New Home*</label>
+                            <input type="text" id="storage7" data-placeholder="">
+                          </div>
+                          <div class="form-group">
+                            <!--<label for=seeAnotherField2>Type of Home*</label>-->
+                            <select class="form-control" id="seeAnotherField8" name="sellist8">
+                              <option value= "no">Type of Home*</option>
+                              <option value = "yes">Apartment</option>
+                              <option value = "no">Town House</option>
+                              <option value = "no">House</option>
+                              <option value = "yes">College Dorm</option>
+                              <option value = "no">Storage Unit</option>
+                            </select>
+                          </div>
+                          <div class="float-container" id="otherFieldDiv8">
+                            <label for="otherField8">Which floor?*</label>
+                            <input type="text" id="otherField8" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="storage8">Date of Your Move*</label>
+                            <input name="date" type="text" onfocus="(this.type='date')" onfocusout="(this.type='text')" id="storage8" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="storage9">Preferred Start Time*</label>
+                            <input type="text" id="storage9" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="storage10">How many movers would you like?*</label>
+                            <input type="text" id="storage10" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="storage11">Will You Need Us to Provide a Moving Truck?*</label>
+                            <input type="text" id="storage11" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="storage12">Will Our Movers Need to Assemble/ Disassemble Anything?*</label>
+                            <input type="text" id="storage12" data-placeholder="">
+                          </div>
+                          <div class="nofloat">
+                            <label for="storagenofloat">Details or Concerns (Please use this space to also list inventory of items being moved)*</label>
+                            <input type="text" id="storagenofloat" data-placeholder="">
+                          </div>
+                          <div>
+                              <input type = "submit" class="submitquote" value="GET QUOTE">
+                          </div>
+                          
+                    </form>
+                </div>
+
+                <div id="storageinperson" class = "col-lg-6 center hidden">
+                  <button type= "button" class = "btn previous" onclick = "back('storageinperson','nextstorage')">&#8249; View all services</button>
+                  <h4 style ="text-align: center;">Fill Out Now for a Free Online Quote</h4>
+                </div>
+
+                <div id="nextwaste" class = "col-lg-6 center hidden">
+                    <button type= "button" class = "btn previous" onclick = "back('nextwaste','try')">&#8249; View all services</button>
+                    <h4 style ="text-align: center;">Fill Out Now for a Free Online Waste Disposal Quote</h4>
+                    <form>
+                        <div class="float-container">
+                            <label for="waste1">How did you hear about us?*</label>
+                            <input type="text" id="waste1" data-placeholder="">
+                          </div>
+                          
+                          <div class="float-container">
+                            <label for="waste2">First and Last Name*</label>
+                            <input type="text" id="waste2" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="waste3">Phone Number*</label>
+                            <input type="text" id="waste3" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="waste4">Email*</label>
+                            <input type="text" id="waste4" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="waste5">Current Address*</label>
+                            <input type="text" id="waste5" data-placeholder="">
+                          </div>
+                          <div class="form-group">
+                            <!--<label for=seeAnotherField>Type of Home*</label>-->
+                            <select class="form-control" id="seeAnotherField9" name="sellist9">
+                              <option value= "no">Type of Home*</option>
+                              <option value = "yes">Apartment</option>
+                              <option value = "no">Town House</option>
+                              <option value = "no">House</option>
+                              <option value = "yes">College Dorm</option>
+                              <option value = "no">Storage Unit</option>
+                            </select>
+                          </div>
+                          <div class="float-container" id="otherFieldDiv9">
+                            <label for="otherField9">Which floor?*</label>
+                            <input type="text" id="otherField9" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="waste7">Address of Your New Home*</label>
+                            <input type="text" id="waste7" data-placeholder="">
+                          </div>
+                          <div class="form-group">
+                            <!--<label for=seeAnotherField2>Type of Home*</label>-->
+                            <select class="form-control" id="seeAnotherField10" name="sellist10">
+                              <option value= "no">Type of Home*</option>
+                              <option value = "yes">Apartment</option>
+                              <option value = "no">Town House</option>
+                              <option value = "no">House</option>
+                              <option value = "yes">College Dorm</option>
+                              <option value = "no">Storage Unit</option>
+                            </select>
+                          </div>
+                          <div class="float-container" id="otherFieldDiv10">
+                            <label for="otherField10">Which floor?*</label>
+                            <input type="text" id="otherField10" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="waste8">Date of Your Move*</label>
+                            <input name="date" type="text" onfocus="(this.type='date')" onfocusout="(this.type='text')" id="waste8" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="waste9">Preferred Start Time*</label>
+                            <input type="text" id="waste9" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="waste10">How many movers would you like?*</label>
+                            <input type="text" id="waste10" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="waste11">Will You Need Us to Provide a Moving Truck?*</label>
+                            <input type="text" id="waste11" data-placeholder="">
+                          </div>
+                          <div class="float-container">
+                            <label for="waste12">Will Our Movers Need to Assemble/ Disassemble Anything?*</label>
+                            <input type="text" id="waste12" data-placeholder="">
+                          </div>
+                          <div class="nofloat">
+                            <label for="wastenofloat">Details or Concerns (Please use this space to also list inventory of items being moved)*</label>
+                            <input type="text" id="wastenofloat" data-placeholder="">
+                          </div>
+                          <div>
+                              <input type = "submit" class="submitquote" value="GET QUOTE">
+                          </div>
+                          
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <p>Schedule Your Move</p>
+                    <p class = "smaller grey width85">Schedule your move now with one of North Carolina's top Moving Companies! Once the free quote form is complete, expect an email from us. Any Questions? Please call us at 919-504-2203</p>
+
+                   <div>
+                    <a target="_blank" href = "https://api.whatsapp.com/send?phone=19196706190&text=&source=&data=&app_absent=" class="button">
+                    <figure><img src= "whatsapp.png"></figure>
+                    <div class= "button-text">
+                        Questions? Message Us on Whatsapp!
+                    </div>
+                    </a>
+                   </div>
+                   <p>Your Budget Movers</p>
+                   <p class = "smaller grey">1145 Executive Cir, Cary, North Carolina 27511, United States</p>
+                   <p class = "smaller orange nopadding">919-504-2203</p>
+                   <p class = "smaller orange">info@yourbudgetmover.com</p>
+                   <p>Service Area</p>
+                   <p class = "smaller grey width85">We proudly serve the Triangle Region and all of our neighbors in North Carolina.</p>
+                </div>
+        
+            </div>
+        </div>
+
+        <script src="myscripts.js"></script>
+    </body>
+    <footer>
+      <div class="container-fluid padding">
+        <div class="crimson row text-center">
+          <div class="col-md-12">
+                    <ul>
+                    <li><a href="quote.html">GET A QUOTE</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="reviews.html">REVIEWS</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href ="jointeam.html">JOIN OUR TEAM</a></li>
+                    <li><a href="incident.html">INCIDENT REPORT</a></li>
+                    </ul>
+          </div>
+          <div class=" nopadding col-md-12">
+                    <p class= "smaller"><b>Your Budget Movers</b></p>
+                    <p class = "smaller">1145 E Executive Circle Cary, NC</p>
+                    <p class = "smaller"><a href="tel:919-504-2203" style="color: #FF7B00">919-504-2203</a></p>
+          </div>
+          <div class="col-12">
+            <p class = "smaller grey">Copyright &copy; 2020 Your Budget Movers- All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+</html>
